@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#05070C] text-white font-['Inter'] antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-['Playfair_Display'];
+  }
+  ::selection {
+    @apply bg-[#E11D48] text-white;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #05070C;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1A2140;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2A3160;
+  }
+}
+
+.revjet-gradient {
+  background: linear-gradient(135deg, #0B1020 0%, #05070C 100%);
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.canvas-container {
+  mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+}
